@@ -1,5 +1,6 @@
 public class Encoded {
     public static void main(String[] args) {
+        String original = "";
         String encode = "";
         char[][] decode = {
                 { 'e', 'e', 'd', 'A', 'R' },
@@ -14,7 +15,16 @@ public class Encoded {
                 encode += decode[j][i];
 
             }
+
         }
+        for (int i = 0; i < decode.length; i++) {
+            for (int j = 0; j < decode.length; j++) {
+                original += decode[i][j];
+
+            }
+
+        }
+        System.out.println("Original: " + original);
         System.out.println(encode);
 
     }
